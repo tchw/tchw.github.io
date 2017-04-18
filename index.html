@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>life</title>
+</head>
+<body>
+	<canvas id="cellsCanvas" width="799" height="799"
+		style="border: 1px solid #000000;"></canvas>
+	<canvas id="plotCanvas" width="799" height="799"
+		style="border: 1px solid #000000;"></canvas>
+	<br>
+
+	<button id="resetButton">Reset</button>
+	<button id="startButton">Start</button>
+	<button id="pauseButton">Pause</button>
+	<button id="stepButton">Step</button>
+
+	<form>
+		<table>
+			<tr>
+				<td align="left">&Delta;t[ms]</td>
+				<td align="left"><input type="text" id="timeStepInput"></td>
+			</tr>
+			<tr>
+				<td align="left">Density[0,1]</td>
+				<td align="left"><input type="text" id="densityInput"></td>
+			</tr>
+		</table>
+	</form>
+
+	<script src="life.js"></script>
+</body>
+</html>
